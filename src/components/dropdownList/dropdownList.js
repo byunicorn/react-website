@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class DropdownList extends Component {
   constructor(props) {
-    suprer(props);
+    super(props);
 
     this.handleChange = this.handleChange.bind(this);
 
@@ -22,9 +22,10 @@ class DropdownList extends Component {
   }
 
   render() {
+    debugger;
     var listItems = this.props.items.map(function(item) {
       return (
-        <option value="{item.key}">{item.value}</option>
+        <option value={item.key}>{item.value}</option>
       );
     });
 

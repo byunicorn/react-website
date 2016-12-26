@@ -38,7 +38,7 @@ export default {
     {
       path: 'new',
       getComponent(location, cb) {
-        System.import('./pages/createNewRepo/createNewRepo.jsx')
+        System.import('./pages/createNewRepo/createNewRepo')
           .then(loadRoute(cb))
           .catch(errorLoading);
       }
