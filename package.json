@@ -1,0 +1,25 @@
+{
+  "name": "code-splitting-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "v3.0.0",
+    "self": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "html-webpack-plugin": "^2.24.1",
+    "webpack": "2.2.0-rc.0",
+    "webpack-dev-server": "v2.1.0-beta.10"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development node webpack/webpack-dev-server --env.dev",
+    "build": "rm -rf build/* | NODE_ENV=production webpack --config webpack/webpack.config.js --progress --env.prod"
+  }
+}
